@@ -7,25 +7,90 @@
 # explicando a função do diretório com suas próprias palavras.
 
 /proc
-  
+ 1    3   8          devices      iomem     mounts        swaps        vmstat
+10   32  9          device-tree  ioports   net           sys          zoneinfo
+11   4   buddyinfo  diskstats    irq       pagetypeinfo  sysvipc
+110  42  bus        driver       kallsyms  partitions    thread-self
+12   47  cgroups    execdomains  kmsg      sched_debug   timer_list
+13   48  cmdline    fb           loadavg   self          tty
+14   5   consoles   filesystems  locks     slabinfo      uptime
+15   6   cpuinfo    fs           meminfo   softirqs      version
+2    7   crypto     interrupts   misc      stat          vmallocinfo 
 
 /proc/cpuinfo
-  
-
+  cat
+hart    : 0
+isa     : rv64acdfimsu
+mmu     : sv48
 /proc/meminfo
-  
+  MemTotal:         186324 kB
+MemFree:          177452 kB
+MemAvailable:     177028 kB
+Buffers:               0 kB
+Cached:             3804 kB
+SwapCached:            0 kB
+Active:             3996 kB
+Inactive:           1076 kB
+Active(anon):       1268 kB
+Inactive(anon):        0 kB
+Active(file):       2728 kB
+Inactive(file):     1076 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+
 
 /proc/uptime
-  
+  2998.96 2806.64
 
 /bin
-
+2349
   
 /dev
-  
+  console             ptyd7  ptys3  ptywf   tty31  ttyc5  ttyr1  ttyvd
+cpu_dma_latency     ptyd8  ptys4  ptyx0   tty32  ttyc6  ttyr2  ttyve
+full                ptyd9  ptys5  ptyx1   tty33  ttyc7  ttyr3  ttyvf
+hvc0                ptyda  ptys6  ptyx2   tty34  ttyc8  ttyr4  ttyw0
+hvc1                ptydb  ptys7  ptyx3   tty35  ttyc9  ttyr5  ttyw1
+hvc2                ptydc  ptys8  ptyx4   tty36  ttyca  ttyr6  ttyw2
+hvc3                ptydd  ptys9  ptyx5   tty37  ttycb  ttyr7  ttyw3
+hvc4                ptyde  ptysa  ptyx6   tty38  ttycc  ttyr8  ttyw4
+hvc5                ptydf  ptysb  ptyx7   tty39  ttycd  ttyr9  ttyw5
+hvc6                ptye0  ptysc  ptyx8   tty4   ttyce  ttyra  ttyw6
+hvc7                ptye1  ptysd  ptyx9   tty40  ttycf  ttyrb  ttyw7
+kmem                ptye2  ptyse  ptyxa   tty41  ttyd0  ttyrc  ttyw8
+kmsg                ptye3  ptysf  ptyxb   tty42  ttyd1  ttyrd  ttyw9
+mem                 ptye4  ptyt0  ptyxc   tty43  ttyd2  ttyre  ttywa
+memory_bandwidth    ptye5  ptyt1  ptyxd   tty44  ttyd3  ttyrf  ttywb
+network_latency     ptye6  ptyt2  ptyxe   tty45  ttyd4  ttys0  ttywc
+network_throughput  ptye7  ptyt3  ptyxf   tty46  ttyd5  ttys1  ttywd
+null                ptye8  ptyt4  ptyy0   tty47  ttyd6  ttys2  ttywe
+port                ptye9  ptyt5  ptyy1   tty48  ttyd7  ttys3  ttywf
+
 
 /etc
-  
+  adjtime                      inittab                radvd.conf
+aliases                      inputrc                rc0.d
+alternatives                 iproute2               rc1.d
+appstream.conf               issue                  rc2.d
+asciidoc                     issue.d                rc3.d
+asound.conf                  issue.net              rc4.d
+audit                        kde                    rc5.d
+axelrc                       kernel                 rc6.d
+bash_completion.d            koji.conf              rc.d
+bashrc                       koji.conf.d            rdma
+bindresvport.blacklist       kojid                  rearj.cfg
+binfmt.d                     krb5.conf              redhat-release
+cheat                        krb5.conf.d            request-key.conf
+chkconfig.d                  ld.so.cache            request-key.d
+chrony.conf                  ld.so.conf             resolv.conf
+chrony.keys                  ld.so.conf.d           rhashrc
+cifs-utils                   lftp.conf              rpc
+colordiffrc                  libaudit.conf          rpkg
+
 
 
 # PARTE B — Questão de reflexão
@@ -33,4 +98,4 @@
 # e que rotinas de dispositivo traduziam comandos.
 # Em qual diretório do Linux você reconhece essa função?
 
-Resposta:
+Resposta: O diretorio se encontra no /etc
