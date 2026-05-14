@@ -8,7 +8,7 @@
 # // ASSIGN SYS004,TAPE para associar um job a um dispositivo.
 # No shell moderno, qual mecanismo cumpre papel equivalente?
 
-Resposta:
+Resposta: No shel moderno, o que faz esse papel são os redirecionamento de Intrada e Saida usando simbulos tipo >, < e | e os Arquivus do computador tipo o diretório /dev/.
 
 # ─────────────────────────────────────────────────────
 
@@ -20,10 +20,12 @@ Resposta:
 #    que não mudou?
 
 Resposta 1:
-
+Ele cria um mapa lógico do que precisa ser feito primeiro e vigia o "relógio" dos arquivos para nunca trabalhar à toa 
 
 # 2. O monitor unificava "supervisor, carregador e rotinas de I/O
 #    sob uma interface textual". O que o Makefile unifica no fluxo
 #    de desenvolvimento moderno?
 
-Resposta 2:
+Resposta 2:O Makefile atua como uma interface única para uma cadeia de ferramentas que, hoje, é muito mais fragmentada e complexa do que nos tempos do mainframe.
+O Makefile encapsula tudo sob comandos simples como make build ou make lint, você não precisa saber as flags complexas do compilador, o Makefile as unifica em uma interface textual padronizada.
+O monitor histórico lidava com endereços físicos de memória e canais, o Makefile lida com a abstração de caminhos de sistema e variáveis de ambiente 
